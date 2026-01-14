@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Codificación para soportar acentos y caracteres especiales -->
   <meta charset="UTF-8" />
+
+  <!-- Hace que el sitio sea responsive en móviles y tablets -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consultoría Financiera para Pequeños Empresarios</title>
+
+  <!-- Título del sitio -->
+  <title>Consultoría Financiera para Negocios en Crecimiento</title>
 
   <style>
+    /* =====================
+       ESTILOS GENERALES
+       ===================== */
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
@@ -13,6 +21,9 @@
       color: #1f2937;
     }
 
+    /* =====================
+       ENCABEZADO PRINCIPAL
+       ===================== */
     header {
       background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
                   url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');
@@ -34,6 +45,9 @@
       margin: 0 auto;
     }
 
+    /* =====================
+       SECCIONES
+       ===================== */
     section {
       padding: 70px 20px;
       max-width: 1150px;
@@ -47,6 +61,9 @@
       text-align: center;
     }
 
+    /* =====================
+       TARJETAS
+       ===================== */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -72,11 +89,22 @@
       margin-bottom: 15px;
     }
 
+    .card h3 {
+      margin-top: 0;
+      color: #1e293b;
+    }
+
+    /* =====================
+       PROBLEMAS
+       ===================== */
     .problems .card {
       text-align: center;
       font-size: 1.1rem;
     }
 
+    /* =====================
+       LLAMADO A LA ACCIÓN
+       ===================== */
     .cta {
       background: linear-gradient(135deg, #1e3a8a, #2563eb);
       color: #fff;
@@ -96,6 +124,9 @@
       font-size: 1.05rem;
     }
 
+    /* =====================
+       PIE DE PÁGINA
+       ===================== */
     footer {
       background: #0f172a;
       color: #cbd5e1;
@@ -104,6 +135,9 @@
       font-size: 0.95rem;
     }
 
+    /* =====================
+       BOTÓN WHATSAPP
+       ===================== */
     .whatsapp-float {
       position: fixed;
       width: 60px;
@@ -114,22 +148,27 @@
       color: #fff;
       border-radius: 50px;
       font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Orden Financiero para Negocios que Quieren Crecer</h1>
+  <h1>Claridad Financiera para Negocios en Crecimiento</h1>
   <p>
-    Acompaño a micro, pequeños y medianos negocios a ordenar sus finanzas
-    y tomar mejores decisiones, sin tecnicismos ni complicaciones.
+    Acompaño a negocios —micro, pequeños y medianos—
+    a ordenar sus finanzas, entender su dinero y tomar decisiones
+    con seguridad, sin tecnicismos innecesarios.
   </p>
 </header>
 
@@ -137,43 +176,64 @@
   <h2>¿A quién acompaño?</h2>
   <div class="cards">
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d" alt="Comercios">
       <h3>Comercios</h3>
-      <p>Negocios que venden todos los días pero no saben cuánto ganan realmente.</p>
+      <p>Negocios que venden todos los días pero no tienen claridad sobre su rentabilidad.</p>
     </div>
     <div class="card">
-      <h3>Empresas de Servicios</h3>
-      <p>Negocios que necesitan orden financiero para crecer sin estrés.</p>
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Servicios">
+      <h3>Servicios</h3>
+      <p>Empresas que dependen del flujo de caja mensual y necesitan orden financiero.</p>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Profesionales">
       <h3>Profesionales Independientes</h3>
-      <p>Quieren separar sus finanzas personales del negocio.</p>
+      <p>Personas que quieren separar su dinero personal del negocio.</p>
     </div>
   </div>
 </section>
 
 <section class="problems">
-  <h2>Problemas comunes</h2>
+  <h2>Situaciones financieras comunes</h2>
   <div class="cards">
     <div class="card">❌ Mucho trabajo y poco dinero</div>
-    <div class="card">❌ No saber si el negocio es rentable</div>
+    <div class="card">❌ No saber si el negocio gana</div>
     <div class="card">❌ Mezclar dinero personal y del negocio</div>
-    <div class="card">❌ Miedo a impuestos</div>
+    <div class="card">❌ Miedo a impuestos y errores</div>
+  </div>
+</section>
+
+<section>
+  <h2>Mi forma de acompañarte</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>1️⃣ Diagnóstico</h3>
+      <p>Revisamos qué está pasando realmente con tu dinero.</p>
+    </div>
+    <div class="card">
+      <h3>2️⃣ Orden</h3>
+      <p>Organizamos la información financiera sin complicaciones.</p>
+    </div>
+    <div class="card">
+      <h3>3️⃣ Decisiones</h3>
+      <p>Sales con claridad para decidir sin miedo.</p>
+    </div>
   </div>
 </section>
 
 <section class="cta">
-  <h2>Da el siguiente paso</h2>
-  <p>Si quieres claridad financiera real, el primer paso es un diagnóstico.</p>
-  <a href="https://forms.gle/Tpa5xL3VKEhJusVD8" target="_blank">
-    Solicitar diagnóstico financiero
-  </a>
+  <h2>Cuando quieras mayor claridad</h2>
+  <p>El siguiente paso es un diagnóstico financiero.</p>
+  <a href="diagnostico.html">Ir al Diagnóstico Financiero</a>
 </section>
 
 <footer>
   <p>Consultoría Financiera | Atención en línea | © 2026</p>
 </footer>
 
-<a href="https://wa.me/50376393562" class="whatsapp-float" target="_blank">💬</a>
+<a href="https://wa.me/50376393562" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  💬
+</a>
 
 </body>
 </html>
